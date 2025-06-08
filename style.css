@@ -6,7 +6,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden; /* verhindert Scrollen */
+  overflow: hidden;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 
 .container {
   text-align: center;
+  max-width: 90%;
 }
 
 #mainButton {
@@ -29,10 +30,11 @@ body {
   background-color: red;
   color: white;
   font-size: 2.5rem;
-  border: none;
+  border: 4px solid darkred; /* Roter Rand */
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.2s;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  margin: 20px 0;
 }
 
 #mainButton:active {
@@ -40,8 +42,13 @@ body {
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
 }
 
+#instruction {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
 #message {
-  margin-top: 1rem;
   font-size: 1.2rem;
   color: #f55;
   height: 1.5rem;
