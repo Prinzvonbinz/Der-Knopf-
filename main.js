@@ -12,7 +12,6 @@ button.addEventListener("click", () => {
   const random = Math.random() * 100;
 
   if (random < chance) {
-    // Game Over
     message.textContent = "Game Over! Punkte zurückgesetzt.";
     score = 0;
     chance = 0;
