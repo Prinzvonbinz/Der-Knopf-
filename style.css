@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* verhindert Scrollen */
+}
+
 body {
   background: #111;
   color: white;
@@ -5,8 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .container {
@@ -14,17 +23,26 @@ body {
 }
 
 #mainButton {
-  font-size: 4rem;
-  padding: 1.2rem 2.5rem;
-  border: none;
-  border-radius: 1rem;
-  background: #444;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: red;
   color: white;
-  transition: transform 0.1s ease, background 0.3s;
+  font-size: 2.5rem;
+  border: none;
   cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
 #mainButton:active {
-  transform: scale(0.95);
-  background: #666;
+  transform: scale(0.9);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #f55;
+  height: 1.5rem;
 }
